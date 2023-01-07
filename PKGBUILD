@@ -24,6 +24,8 @@ b2sums=('9c85c3eb72f3bb39bc4fd44aaa80338ca197a4e8183436fee73cd56705abfdaecfaf1b6
 
 validpgpkeys=('4F3BA9AB6D1F8D683DC2DFB56AD860EED4598027'  # Tony Hutter (GPG key for signing ZFS releases) <hutter2@llnl.gov>
               'C33DF142657ED1F7C328A2960AB9E991C6AF658B') # Brian Behlendorf <behlendorf1@llnl.gov>
+backup=('etc/default/zfs'
+        'etc/zfs/zed.d/zed.rc')
 
 prepare() {
     cd "${srcdir}"/zfs-${pkgver}
